@@ -1,0 +1,114 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.section_produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card_produto {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(3, 2, 2, 0.1);
+    box-shadow: 10px 10px 10px rgba(3, 2, 2, 0.1);
+    width: 280px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card_produto:hover {
+    transform: translateY(-10px);
+}
+
+.imagem_produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.infos_produto {
+    padding: 20px;
+    text-align: center;
+}
+
+.nome_produto {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.marca_produto {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.descricao_produto {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.preco_produto {
+    font-size: 1.5em;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.btn_comprar {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_comprar:hover {
+    background-color: #219150;
+}
+
+.icones_produto {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.icone_deletar, .icone_editar{
+    font-size: 1.5em;
+}
+
+.icone_deletar:hover {
+    color: #e74c3c;
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icone_editar:hover {
+    color: #2980b9;
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+

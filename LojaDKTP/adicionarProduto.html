@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar produto</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <div class="container-body">
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <header>
+            <div class="sidebar">
+                <div class="logo">
+                    <a href="./index.html"><img src="" alt="Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./adicionarProduto.html"><i class="fas fa-user"></i> Adicionar produto</a></li>
+                    <li><a href="./editarProdutoParcialmente.html"><i class="fas fa-user"></i> Alterar Parcialmente</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main conteudo-principal">
+            <div class="cabecalho">
+                <div class="titulo">
+                    <h1>Adicionar novo produto</h1>
+                </div>
+            </div>
+
+            <form>
+                <div class="grupo-formulario">
+                    <label for="nome-produto">Nome do Produto</label>
+                    <input type="text" id="nome-produto" name="nome-produto" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="descricao-produto">Descrição do Produto</label>
+                    <input type="text" id="descricao-produto" name="descricao-produto" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="marca">Marca do Produto</label>
+                    <input type="text" id="marca" name="marca" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="preco">Preço do Produto</label>
+                    <input type="number" id="preco" name="preco" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="imagem">Imagem do Produto</label>
+                    <input type="text" id="imagem" name="imagem" required>
+                </div>
+                <div class="div_btn">
+                    <button type="submit" class="btn_addProduto">Cadastrar Produto</button>
+                </div>
+            </form>
+
+        </main>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/post.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar produto parcialmente</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <div class="container-body">
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <header>
+            <div class="sidebar">
+                <div class="logo">
+                    <a href="./index.html"><img src="" alt="Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./adicionarProduto.html"><i class="fas fa-user"></i> Adicionar produto</a></li>
+                    <li><a href="./editarProdutoParcialmente.html"><i class="fas fa-user"></i> Alterar Parcialmente</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main conteudo-principal">
+            <div class="cabecalho">
+                <div class="titulo">
+                    <h1>Editar produto parcialmente</h1>
+                </div>
+            </div>
+
+            <form id="patchForm">
+                <div class="grupo-formulario">
+                    <label for="produto-id">ID do Produto</label>
+                    <input type="number" id="produto-id" name="produto-id" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="campo-produto">Selecione o campo a ser editado</label>
+                    <select id="nome-campo" name="nome-campo" required>
+                        <option value="Nome">Nome</option>
+                        <option value="Descricao">Descrição</option>
+                        <option value="Marca">Marca</option>
+                        <option value="Preco">Preço</option>
+                        <option value="Imagem">Imagem</option> <!-- Adiciona a opção de imagem -->
+                    </select>
+                </div>
+                
+
+                <div class="grupo-formulario">
+                    <label for="edicao">Digite a nova informação</label>
+                    <input type="text" id="edicao" name="edicao" required>
+                </div>
+
+                <div class="div_btn">
+                    <button type="submit" class="btn_addProduto">Confirmar edição do produto</button>
+                </div>
+            </form>
+
+        </main>
+    </div>
+
+    <script src="./js/patch.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>

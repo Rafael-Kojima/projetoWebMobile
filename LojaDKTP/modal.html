@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <form id="editForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+            
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca"><br><br>
+            
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco"><br><br>
+            
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao"><br><br>
+            
+                <!-- Novo campo de Imagem (URL) -->
+                <label for="imagem">Imagem (URL):</label>
+                <input type="text" id="imagem" name="imagem"><br><br>
+            
+                <input type="hidden" id="produtoId" name="produtoId">
+            
+                <button type="submit">Salvar</button>
+            </form>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>

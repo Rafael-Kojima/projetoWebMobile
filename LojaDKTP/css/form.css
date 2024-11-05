@@ -1,0 +1,60 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+    border: 1px solid rgb(117, 116, 116);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.div_btn {
+    text-align: center;
+}
+
+.btn_addProduto {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn_addProduto:hover {
+    background-color: #218838;
+}
