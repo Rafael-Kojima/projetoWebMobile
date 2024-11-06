@@ -29,4 +29,3 @@ Cada um desses métodos é implementado tanto na aplicação web quanto na aplic
 
 ---
 
-Este projeto demonstra o uso prático de uma API RESTful em um contexto de loja virtual, explorando diferentes métodos de manipulação de dados e otimização para múltiplas plataformas.
